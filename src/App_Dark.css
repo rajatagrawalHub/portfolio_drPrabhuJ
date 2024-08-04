@@ -278,12 +278,13 @@ strong{
 
 .journalName{
   cursor: pointer;
+  margin-right: 16px;
 }
 
 .journalDescription{
   color: var(--text-secondary);
   font-weight: 500;
-  margin: 0 12px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .journalYear{
@@ -328,25 +329,55 @@ strong{
   text-align: justify;
 }
 
-
 .hide{
-  display: none;
+  display: none !important;
 }
 
 .show{
-  display: flex;
+  display: flex !important;
 }
 
 /* Absolute Values Section */
-
-#SCLogo{
-  width: 20px;
-}
 
 #ProfileImg{
   width: 340px;
 }
 
 #AboutImg{
-  height: 75vh;
+  width: 70vw;
+  height: auto;
+}
+
+
+
+/* Media Query */
+@media screen and (min-width:320px) and (max-width: 768px) {
+  
+  #navHello,.copyrightText,#ProfileImg, .menuText{
+    display: none;
+  }
+
+  #NavBar{
+    flex-basis: 10%;
+  }
+
+  #AboutImg{
+    width: 70vw;
+    height: auto;
+  }
+
+  #bookSec{
+    flex-direction: column !important;
+  }
+
+  .circleYear::after{
+    height: 230px;
+  }
+
+  
+  .contactDetailSection{
+    font-size: 11px;
+    text-wrap: nowrap;
+  }
+  
 }

@@ -129,7 +129,7 @@ export default function PublicationPage(){
             </div>
             <p className="SectionTitle">Books Published</p>
             <RowInfoComponent title={"GUI Testing"} subtitle={'Event Flow Model Framework'} addressline1={"Lambert Academy Publishing"} addressline2={"22 February 2023"} addressline3={"Pages: 152 Pages"} />
-            <div className="flex-row bookSection">
+            <div className="flex-row bookSection" id="bookSec">
                 <img src={BookImg} id="bookImg" />
                 <p className="bookdescription">
                 The event handler's latency for GUI application is increased so testers have to spend more money on that to minimize delay to count the responsiveness of the GUI application. Forced by work on prioritization algorithm for test case generation, the fully automatic model based GUI testing resulted in the effective ordering of the test cases The infeasible problems of test cases and their ripping methods for constructing Event Flow Graph might miss some of the paths since they are not reachable at some state but available at another state and so not optimized. GUI Testing can be performed both manually with a human tester or could be performed automatically with use of a software program. Finding errors when the test suite ran at night, and telling testers in the morning, because we have some known problems.

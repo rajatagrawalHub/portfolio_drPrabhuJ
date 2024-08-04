@@ -1,37 +1,41 @@
-import { Link } from "react-router-dom";
+import { useState } from 'react';
 
-export default function NavBar({ChangePageFn}){
-    
-    function onMenuItemClicked(e,value){
-        let menuItems = document.querySelectorAll(".menuItem");
-        menuItems.forEach((menuItem)=>{
-            if(menuItem.classList.contains("selected")){
-                menuItem.classList.remove("selected");
-            }
-        });
-        e.target.classList.add("selected");
+export default function NavBar({ ChangePageFn }) {
+    const [selectedItem, setSelectedItem] = useState('Home');
+
+    function onMenuItemClicked(value) {
+        setSelectedItem(value);
         ChangePageFn(value);
     }
 
-    
-
-    return(
+    return (
         <div id="NavBar" className="flex-Column">
-            <p className="titleText montserrat_font">Hello</p>
+            <p className="titleText montserrat_font" id="navHello">Hello</p>
             <div id="menuBox" className="flex-Column">
-                
-                <p className="menuItem selected" onClick={(e)=>onMenuItemClicked(e,"Home")}>
-                    <i className="fa-solid fa-house"></i>Home
+                <p 
+                    className={`menuItem ${selectedItem === 'Home' ? 'selected' : ''}`} 
+                    onClick={() => onMenuItemClicked('Home')}
+                >
+                    <i className="fa-solid fa-house"></i><span className="menuText">Home</span>
                 </p>
 
-                <p className="menuItem" onClick={(e)=>onMenuItemClicked(e,"About")}>
-                    <i className="fa-solid fa-circle-info"></i>About
+                <p 
+                    className={`menuItem ${selectedItem === 'About' ? 'selected' : ''}`} 
+                    onClick={() => onMenuItemClicked('About')}
+                >
+                    <i className="fa-solid fa-circle-info"></i><span className="menuText">About</span>
                 </p>
-                <p className="menuItem" onClick={(e)=>onMenuItemClicked(e,"Publications")}>
-                    <i className="fa-solid fa-book-open"></i>Publications
+                <p 
+                    className={`menuItem ${selectedItem === 'Publications' ? 'selected' : ''}`} 
+                    onClick={() => onMenuItemClicked('Publications')}
+                >
+                    <i className="fa-solid fa-book-open"></i><span className="menuText">Publications</span>
                 </p>
-                <p className="menuItem" onClick={(e)=>onMenuItemClicked(e,"Achievements")}>
-                    <i className="fa-solid fa-trophy"></i>Achievements
+                <p 
+                    className={`menuItem ${selectedItem === 'Achievements' ? 'selected' : ''}`} 
+                    onClick={() => onMenuItemClicked('Achievements')}
+                >
+                    <i className="fa-solid fa-trophy"></i><span className="menuText">Achievements</span>
                 </p>
             </div>
             <p className="copyrightText"><i className="fa-regular fa-copyright"></i>Copyright 2024</p>
