@@ -396,4 +396,13 @@ strong{
   .journalName,.journalDescription{
     font-size: 14px;
   }
+
+  .nameTextRIC{
+    font-size: 16px !important;
+  }
+
+  .contactRow{
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
 }

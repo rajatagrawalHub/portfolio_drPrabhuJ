@@ -393,4 +393,13 @@ strong{
     text-wrap: wrap !important;
     font-size: 11px !important;
   }
+
+  .nameTextRIC{
+    font-size: 16px !important;
+  }
+
+  .contactRow{
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
 }
