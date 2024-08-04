@@ -402,4 +402,8 @@ strong{
     flex-direction: column !important;
     gap: 4px !important;
   }
+
+  .journalName,.journalDescription{
+    font-size: 11px !important;
+  }
 }

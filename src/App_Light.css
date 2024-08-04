@@ -394,7 +394,7 @@ strong{
   }
 
   .journalName,.journalDescription{
-    font-size: 14px;
+    font-size: 11px !important;
   }
 
   .nameTextRIC{
@@ -405,4 +405,6 @@ strong{
     flex-direction: column !important;
     gap: 4px !important;
   }
+
+
 }
