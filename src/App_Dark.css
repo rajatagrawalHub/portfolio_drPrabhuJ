@@ -1,0 +1,352 @@
+a, a:visited {
+  text-decoration: none;
+  color: inherit;        
+  font-weight: normal;   
+  font-size: inherit;    
+  background: none;    
+  border: none;       
+  margin: 0;           
+  padding: 0;          
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-Column{
+  display: flex;
+  flex-direction: column;
+}
+
+.center_both{
+  justify-content: center;
+  align-self: center;
+}
+
+.center_items{
+  align-items: center;
+}
+
+.montserrat_font{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.flex-Grow{
+  flex-grow: 1;
+}
+
+.bold{
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+.btn{
+  width: fit-content;
+  padding:12px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#darkContainer{
+ --bg-primary: #181818;
+ --bg-secondary: #000000;
+ --text-primary: #ffffff;
+ --text-secondary: #bbbbbb;
+ --border-divider: 1.5px solid #76767656;
+ --padding-border: 8px 0 24px 0;
+}
+
+#darkContainer {
+  background-color: var(--bg-primary);
+  color: white;
+}
+
+#darkContainer  #NavBar{
+  height: 100vh;
+  max-height: 100vh !important;
+  background-color: var(--bg-secondary);
+  flex-basis: 20%;
+  justify-content: space-around;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#NavBar i{
+  padding: 0 12px;
+}
+
+.titleText{
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#menuBox{
+  gap: 28px;
+}
+
+#darkContainer .menuItem{
+  font-size: 18px;
+  color: #bbbbbb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#darkContainer .selected {
+  color: white;
+}
+
+#darkContainer .copyrightText{
+  color: #636363;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+#darkContainer #modeSwitch{
+  background-color: #484848;
+  width: fit-content;
+  height: fit-content;
+  padding:12px 16px;
+  position:fixed;
+  right: 0%;
+  top: 0%;
+  margin-top: 12px;
+  font-size: 24px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  cursor: pointer;
+}
+
+#heroPage{
+  padding: 12px 24px;
+  gap: 24px;
+}
+
+.drTitle{
+  font-family: "Mr Dafoe", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.designation{
+  font-size: 24px;
+}
+
+#darkContainer .titleDescription{
+  color: #bbbbbb;
+  padding: 16px 0;
+}
+
+#SocialsBox{
+  gap: 12px;
+  font-size: 20px;
+}
+
+#SocialsBox i{
+  cursor: pointer;
+}
+
+.subsection{
+  gap: 12px;
+  margin: 12px 24px;  
+}
+
+#darkContainer .btnTitle{
+  background-color: #484848;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 6px 12px;
+  margin: 6px 0;
+}
+
+.SectionTitle{
+  font-weight: 900;
+  font-size: 24px;
+  padding: 24px 0;
+}
+
+#RowInfoComponentBox, #RowInfoComponentBoxv2, #RowInfoComponentBoxv3,#RowInfoComponentBoxv4{
+  padding: 12px 0;
+  border-bottom: var(--border-divider) ;
+  background-color: var(--bg-primary);
+  justify-content: space-between;
+}
+
+.sticky{
+  position: sticky;
+  top: 60px;
+}
+
+.fixed{
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: var(--bg-primary);
+}
+
+.keyDetails{
+  gap: 8px;
+}
+
+.nameTextRIC{
+  font-size: 24px;
+  font-weight: 750;
+}
+
+.designationTextRIC{
+  color: var(--text-secondary);
+}
+
+.minorDetails{
+  gap: 4px;
+}
+
+.minorDetailItem{
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.content{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: justify;
+  border-bottom: var(--border-divider);
+  padding: var(--padding-border);
+}
+
+.contactDetailSection{
+  gap: 12px;
+  font-size: 16px;
+  border-bottom: var(--border-divider);
+  padding: var(--padding-border);
+}
+
+.contactRow{
+  justify-content: space-between;
+}
+
+.contactItem{
+  gap: 16px;
+}
+
+.contactTitle{
+  font-weight: bold;
+}
+
+.contactDetail{
+  color: var(--text-secondary);
+}
+
+#darkContainer .btnBlack{
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  font-weight: 700;
+}
+
+strong{
+  color: var(--text-primary);
+}
+
+#achievementSection #RowInfoComponentBox{
+  padding: 24px 0;
+}
+
+#RowInfoComponentBoxv2 .nameTextRIC{
+  cursor: pointer;
+}
+
+.rightbox{
+  font-size: 24px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+#RowInfoComponentBoxv4{
+  gap: 10px;
+}
+
+.journalName{
+  cursor: pointer;
+}
+
+.journalDescription{
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin: 0 12px 0 0;
+}
+
+.journalYear{
+  align-self: flex-end;
+  margin: 4px 12px;
+  gap: 6px;
+}
+
+.circleYear{
+  height: 16px;
+  width: 16px;
+  background-color: var(--text-primary);
+  border-radius: 50%;
+  position: relative;
+}
+
+.circleYear::after{
+  content: '';
+  width: 2px;
+  height: 135px;
+  position:absolute;
+  top: 100%;
+  left: 50%;
+  background-color: var(--text-primary);
+  transform: translateX(-50%);
+}
+
+.last-row::after {
+  display: none;
+}
+
+.bookSection{
+  gap: 12px;
+  border-bottom: var(--border-divider);
+  padding: var(--padding-border);
+}
+
+.bookdescription{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-align: justify;
+}
+
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: flex;
+}
+
+/* Absolute Values Section */
+
+#SCLogo{
+  width: 20px;
+}
+
+#ProfileImg{
+  width: 340px;
+}
+
+#AboutImg{
+  height: 75vh;
+}
