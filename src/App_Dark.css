@@ -1,3 +1,4 @@
+
 a, a:visited {
   text-decoration: none;
   color: inherit;        
@@ -362,8 +363,7 @@ strong{
   }
 
   #AboutImg{
-    width: 70vw;
-    height: auto;
+   display: none;
   }
 
   #bookSec{
@@ -380,4 +380,17 @@ strong{
     text-wrap: nowrap;
   }
   
+  .titleText{
+    font-size: 36px !important;
+  }
+
+  #RowInfoComponentBox{
+    flex-direction: column !important;
+  }
+
+  .minorDetailItem{
+    text-align: left !important;
+    text-wrap: wrap !important;
+    font-size: 11px !important;
+  }
 }

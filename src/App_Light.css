@@ -1,3 +1,4 @@
+
 a, a:visited {
   text-decoration: none;
   color: inherit;        
@@ -278,12 +279,12 @@ strong{
 .journalDescription{
   color: var(--text-secondary);
   font-weight: 500;
-  margin: 0 20px 0 0;
+  margin: 0 24px 0 0;
 }
 
 .journalName{
   cursor: pointer;
-  margin-right: 16px;
+  margin-right: 18px;
 }
 
 .journalYear{
@@ -353,7 +354,6 @@ strong{
 
 /* Media Query */
 @media screen and (min-width:320px) and (max-width: 768px) {
-  
   #navHello,.copyrightText,#ProfileImg, .menuText{
     display: none;
   }
@@ -363,8 +363,7 @@ strong{
   }
 
   #AboutImg{
-    width: 70vw;
-    height: auto;
+    display: none;
   }
 
   #bookSec{
@@ -380,4 +379,21 @@ strong{
     font-size: 11px;
   }
 
+  .titleText{
+    font-size: 36px !important;
+  }
+
+  #RowInfoComponentBox{
+    flex-direction: column !important;
+  }
+
+  .minorDetailItem{
+    text-align: left !important;
+    text-wrap: wrap !important;
+    font-size: 11px !important;
+  }
+
+  .journalName,.journalDescription{
+    font-size: 14px;
+  }
 }
