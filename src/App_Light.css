@@ -56,7 +56,7 @@ a, a:visited {
  --bg-primary: #f8f8f8;
  --bg-secondary: #ffffff;
  --text-primary: black;
- --text-secondary: #767676;
+ --text-secondary: #303030;
  --border-divider: 1.5px solid #76767656;
  --padding-border: 8px 0 24px 0;
 }
@@ -76,6 +76,7 @@ a, a:visited {
   position: sticky;
   top: 0;
   left: 0;
+  min-width: fit-content;
 }
 
 #lightContainer #NavBar i{
@@ -83,7 +84,7 @@ a, a:visited {
 }
 
 #lightContainer .titleText{
-  font-size: 60px;
+  font-size: 48px;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -137,7 +138,7 @@ a, a:visited {
 }
 
 .designation{
-  font-size: 24px;
+  font-size: 14px;
 }
 
 #lightContainer .titleDescription{

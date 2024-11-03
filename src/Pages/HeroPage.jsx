@@ -3,45 +3,7 @@ import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function HeroPage(){
-    const messages = [
-        "Professor",
-        "Innovative Researcher",
-        "AI & ML Enthusiast",
-        "Scholar"
-    ];
-
-    const [text, setText] = useState("");
-    const [cursorVisible, setCursorVisible] = useState(true);
-    const [messageIndex, setMessageIndex] = useState(0);
-    const [charIndex, setCharIndex] = useState(0);
-
-    useEffect(() => {
-        const currentMessage = messages[messageIndex];
-
-        const interval = setInterval(() => {
-            if (charIndex < currentMessage.length) {
-                setText((prevText) => prevText + currentMessage[charIndex]);
-                setCharIndex((prevCharIndex) => prevCharIndex + 1);
-            } else {
-                setTimeout(() => {
-                    setMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
-                    setCharIndex(0);
-                    setText('');
-                }, 100);
-            }
-        }, 400);
-
-        return () => clearInterval(interval);
-    }, [charIndex, messageIndex]);
-
-    useEffect(() => {
-        const cursorInterval = setInterval(() => {
-            setCursorVisible((prevVisible) => !prevVisible);
-        }, 300);
-
-        return () => clearInterval(cursorInterval);
-    }, []);
-
+    
     const links = [
         "https://scholar.google.com/citations?user=6-4F8SsAAAAJ&hl=en",
         "https://orcid.org/0000-0003-3335-6911",
@@ -56,7 +18,11 @@ export default function HeroPage(){
             <div className="heroText flex-Column center_both">
                 <p className="drTitle">Dr</p>
                 <p className="titleText nameText">Prabhu Jayagopal</p>
-                <p className="designation">{text} {cursorVisible && <span>|</span>}</p>
+                <p className="designation">Professor</p>
+                <p className="designation">Department of Software & Systems Engineering</p>
+                <p className="designation">SCORE, VIT Vellore</p>
+                <p className="designation">Tamil Nadu, India</p>
+                <p className="designation">+91 9842241883</p>
                 <p className="titleDescription">A distinguished Professor whose innovative research has advanced the fields of Machine Learning, Artificial Intelligence and IoT.</p>
                 <div id="SocialsBox" className="flex-row">
                     <Link to={links[0]}><i className="fa-brands fa-google-scholar" ></i></Link>

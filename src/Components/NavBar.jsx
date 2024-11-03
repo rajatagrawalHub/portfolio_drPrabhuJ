@@ -1,7 +1,35 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function NavBar({ ChangePageFn }) {
     const [selectedItem, setSelectedItem] = useState('Home');
+
+    const messages = [
+        "Hello",
+        "नमस्ते"
+    ];
+
+    const [text, setText] = useState("");
+    const [messageIndex, setMessageIndex] = useState(0);
+    const [charIndex, setCharIndex] = useState(0);
+
+    useEffect(() => {
+        const currentMessage = messages[messageIndex];
+
+        const interval = setInterval(() => {
+            if (charIndex < currentMessage.length) {
+                setText((prevText) => prevText + currentMessage[charIndex]);
+                setCharIndex((prevCharIndex) => prevCharIndex + 1);
+            } else {
+                setTimeout(() => {
+                    setMessageIndex((prevIndex) => (prevIndex + 1) % messages.length);
+                    setCharIndex(0);
+                    setText('');
+                }, 100);
+            }
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, [charIndex, messageIndex]);
 
     function onMenuItemClicked(value) {
         setSelectedItem(value);
@@ -10,7 +38,7 @@ export default function NavBar({ ChangePageFn }) {
 
     return (
         <div id="NavBar" className="flex-Column">
-            <p className="titleText montserrat_font" id="navHello">Hello</p>
+            <p className="titleText montserrat_font" id="navHello">{text}</p>
             <div id="menuBox" className="flex-Column">
                 <p 
                     className={`menuItem ${selectedItem === 'Home' ? 'selected' : ''}`} 

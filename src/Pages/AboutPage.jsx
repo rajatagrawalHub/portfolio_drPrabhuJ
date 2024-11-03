@@ -10,8 +10,7 @@ export default function AboutPage(){
                 </div>
                 <p className="SectionTitle">Meet Me</p>
             </div>
-            <img src={AboutBg} id="AboutImg" />
-            <RowInfoComponent className="sticky" title={"Dr Prabhu Jayagopal"} subtitle={"Professor"} addressline1={"Department of Software & Systems Engineering"} addressline2={"SCORE, VIT Vellore"} addressline3={"Tamil Nadu, India"} />
+            <RowInfoComponent className="sticky" title={"Dr Prabhu Jayagopal"} subtitle={"Professor"} addressline1={"Department of Software & Systems Engineering"} addressline2={"SCORE, VIT Vellore"} addressline3={"Tamil Nadu, India"} addressline4= {"+91 9842241883"} />
             <p className="content">
             Dr. Prabhu Jayagopal is a distinguished Professor in the department of Software & Systems Engineering in School of Computer Science Engineering and Information Systems in Vellore Institute of Technology, Vellore, Tamil Nadu, India whose innovative research has advanced the fields of Machine Learning, Artificial Intelligence and IoT related with healthcare. Dr. Prabhu Jayagopal belong to beautiful city Kanchipuram in Tamilnadu, India, Dr. Prabhu Jayagopal pursued his undergraduate studies at the Vellore Institute of Technology, where he earned his B.tech degree in Information Technology in the year 2004. Inspired by his professors' research in computer science engineering, Dr. Prabhu Jayagopal went on to complete his Master's in 2007 and Ph.D. in Computer Science Engineering at the Sathyabama university, Tamilnadu, India, specializing in software systems in the year 2015. 
             <br></br>
