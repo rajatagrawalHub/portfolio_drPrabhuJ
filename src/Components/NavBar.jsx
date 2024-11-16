@@ -4,8 +4,7 @@ export default function NavBar({ ChangePageFn }) {
     const [selectedItem, setSelectedItem] = useState('Home');
 
     const messages = [
-        "Hello",
-        "नमस्ते"
+        "Hello"
     ];
 
     const [text, setText] = useState("");
