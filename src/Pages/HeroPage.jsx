@@ -20,8 +20,10 @@ export default function HeroPage(){
                 <p className="titleText nameText">Prabhu Jayagopal</p>
                 <p className="designation">Professor</p>
                 <p className="designation">Department of Software & Systems Engineering</p>
-                <p className="designation">SCORE, VIT Vellore</p>
-                <p className="designation">Tamil Nadu, India</p>
+                <p className="designation">School of Computer Science Engineering </p>
+                <p className="designation">and Information Systems</p>
+                <p className="designation"> Vellore Institute of  Technology ,</p>               
+                <p className="designation">Vellore-632014,Tamil Nadu ,India</p>
                 <p className="designation">+91 9842241883</p>
                 <p className="titleDescription">A distinguished Professor whose innovative research has advanced the fields of Machine Learning, Artificial Intelligence and IoT.</p>
                 <div id="SocialsBox" className="flex-row">
